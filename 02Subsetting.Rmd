@@ -1,0 +1,7 @@
+---
+title: "02Subsetting"
+author: "Matthew Strimas-Mackey"
+output:
+  html_document:
+    keep_md: yes
+---
