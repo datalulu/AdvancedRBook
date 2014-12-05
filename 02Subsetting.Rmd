@@ -1,5 +1,5 @@
 ---
-title: "02Subsetting"
+title: "Advanced R - Chapter 2 - Subsetting"
 author: "Matthew Strimas-Mackey"
 output:
   html_document:
