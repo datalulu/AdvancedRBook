@@ -28,7 +28,7 @@ output:
 4. Can you have a list that is a matrix? Can a data frame have a column that is a matrix?
 - No
 
-## Vectors {#vectors}
+## Vectors
 
 Vectores can be atomic vectors, i.e. all elements of the same type, or lists, with mixed types. They have 3 basic properties:
 
@@ -207,7 +207,8 @@ table(sex_factor)
     But when you print that object you don't see the comment attribute.
     Why? Is the attribute missing, or is there something else special about
     it? (Hint: try using help.)
-- comment attributes are not printed by default
+    
+    - comment attributes are not printed by default
     
 2.  What happens to a factor when you modify its levels? 
     
@@ -216,7 +217,8 @@ table(sex_factor)
     levels(f1) <- rev(levels(f1))
     levels(f1) <- 1:26
     ```
-- the mapping between integers and levels is changed, so the vector is now labelled wrong
+    
+    - the mapping between integers and levels is changed, so the vector is now labelled wrong
 
 3.  What does this code do? How do `f2` and `f3` differ from `f1`?
 
@@ -244,11 +246,10 @@ dim(c) <- c(2, 3); c
 `length()` and `names()` have high-dimensional generalisations:
 
 * `length()` generalises to `nrow()` and `ncol()` for matrices, and `dim()`
-  for arrays. \indexc{nrow()} \indexc{ncol()} \indexc{dim()}
+  for arrays.
 
 * `names()` generalises to `rownames()` and `colnames()` for matrices, and
-  `dimnames()`, a list of character vectors, for arrays. \indexc{rownames()}
-  \indexc{colnames()} \indexc{dimnames()}
+  `dimnames()`, a list of character vectors, for arrays.
 
 ```{r}
 length(a)
@@ -267,10 +268,10 @@ b
 ### Exercises
 
 1.  What does `dim()` return when applied to a vector?
-* NULL
+    * NULL
 
 2.  If `is.matrix(x)` is `TRUE`, what will `is.array(x)` return?
-* TRUE
+    * TRUE
 
 3.  How would you describe the following three objects? What makes them
     different to `1:5`?
@@ -280,7 +281,7 @@ b
     x2 <- array(1:5, c(1, 5, 1)); x2
     x3 <- array(1:5, c(5, 1, 1)); x3
     ```
-* 3d arrays, unlike 1:5 they have a dimension attribute
+    * 3d arrays, unlike 1:5 they have a dimension attribute
 
 ## Data frames
 

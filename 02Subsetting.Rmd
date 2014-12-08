@@ -38,7 +38,7 @@ rownames(mtcars) <- NULL
 
 *   ??
 
-## Data types {#data-types}
+## Data types
 
 Six data types can be used for subsetting.
 
@@ -72,7 +72,7 @@ y[c('a', 'd')]
 
 Subsetting a list works in the same way as subsetting an atomic vector. Using `[` will always return a list; `[[` and `$`, as described below, let you pull out the components of the list. 
 
-### Matrices and arrays {#matrix-subsetting}
+### Matrices and arrays 
 
 You can subset higher-dimensional structures in three ways:
 
@@ -176,7 +176,7 @@ str(df[, "x"])
 
 * Changes 0's to NAs
 
-## Subsetting operators {#subsetting-operators}
+## Subsetting operators 
 
 >  "If list `x` is a train carrying objects, then `x[[5]]` is
 > the object in car 5; `x[4:6]` is a train of cars 4-6." 
@@ -321,7 +321,7 @@ unname(lookup[x])
 c(m = "Known", f = "Known", u = "Unknown")[x]
 ```
 
-### Matching and merging by hand (integer subsetting) {#matching-merging}
+### Matching and merging by hand (integer subsetting) 
 
 You may have a more complicated lookup table which has multiple columns of information. Suppose we have a vector of integer grades, and a table that describes their properties:
 
@@ -443,7 +443,7 @@ It's useful to be aware of the natural equivalence between set operations (integ
 * You have very few `TRUE`s and very many `FALSE`s; a set representation 
   may be faster and require less storage.
 
-`which()` allows you to convert a boolean representation to an integer representation. There's no reverse operation in base R but we can easily create one: \indexc{which()}
+`which()` allows you to convert a boolean representation to an integer representation. There's no reverse operation in base R but we can easily create one:
 
 ```{r}
 x <- sample(10) < 4
